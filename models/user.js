@@ -19,8 +19,8 @@ module.exports = db.defineModel(
 
         sex: {
             type: Sequelize.ENUM,
-            values: [0, 1, 2], //0-unknown, 1-male, 2-female
-            defaultValue: 0,
+            values: ['u', 'm', 'f'], //0-unknown, 1-male, 2-female
+            defaultValue: 'u',
         },
 
         password: {
